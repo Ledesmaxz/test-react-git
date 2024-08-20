@@ -1,0 +1,10 @@
+.header{
+    margin: 0 auto;
+    background: #77b777;
+    border-radius: 10px;
+    min-height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
