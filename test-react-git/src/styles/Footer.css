@@ -49,7 +49,7 @@
   
   .footer__links a:hover,
   .footer__socials a:hover {
-    filter: grayscale(0%) invert(50%);
+    filter: grayscale(0%) invert(100%);
   }
   
   .footer__socials img {
@@ -57,6 +57,6 @@
     height: auto;
     margin: 0 10px;
     filter: grayscale(100%) invert(100%); /* Convierte la imagen a blanco */
-    transition: filter 0.3s ease;
+    transition: filter 0.1s ease;
   }
   
