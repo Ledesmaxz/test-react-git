@@ -17,7 +17,7 @@
 
 .main .main__products{
     width: 69%;
-    background: #77b777;
+    background-color: #ccc5b7;
     min-height: 80dvh;
     border-radius: 10px;
     display: flex;
