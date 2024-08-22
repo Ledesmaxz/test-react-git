@@ -1,10 +1,32 @@
 .header{
     margin: 0 auto;
-    background: #77b777;
+    background: white;
     border-radius: 10px;
     min-height: 50px;
     margin-top: 10px;
     display: flex;
-    justify-content:center ;
+    justify-content: space-around ;
     align-items: center;
+}
+
+.Logo{
+    width: 20dvh;
+    cursor: pointer;
+}
+
+.header__se{
+    display: flex;
+    align-items: center;
+}
+.header__search{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: black;
+}
+.Search{
+    width: 3dvh;
+    border: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
