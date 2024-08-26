@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    font-family: 'Helvetica', sans-serif;   
     
     .Product-card {
         width: 250px;

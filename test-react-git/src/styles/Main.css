@@ -8,10 +8,10 @@
 .main .main__aside{
     width: 30%;
     min-height: 80dvh;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .main .main__products{
