@@ -1,10 +1,22 @@
+import { useState } from 'react';
 import '../styles/Footer.css';
 import instagram from '../assets/instagram.png';
 import facebook from '../assets/facebook.png';
 import tiktok from '../assets/Tiktok.png';
 import Location from '../assets/location.png';
+import Politica from './Politica';
 
 export default function Footer() {
+  const [isPoliticaOpen, setIsPoliticaOpen] = useState(false);
+
+  const openPoliticaModal = () => {
+    setIsPoliticaOpen(true);
+  };
+
+  const closePoliticaModal = () => {
+    setIsPoliticaOpen(false);
+  };
+
   return (
     <footer className="footer">
       <div className="footer__location">
@@ -16,7 +28,7 @@ export default function Footer() {
       </div>
       <div className="footer__links">
         <a href="/quienes-somos">Quiénes Somos</a>
-        <a href="/politicas-de-tratamiento">Políticas de Tratamiento de Datos</a>
+        <a href="#" onClick={openPoliticaModal}>Políticas de Tratamiento de Datos</a>
       </div>
       <div className="footer__socials">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -29,6 +41,14 @@ export default function Footer() {
           <img src={tiktok} alt="tiktok" />
         </a>
       </div>
+      {isPoliticaOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <button onClick={closePoliticaModal} className="close-button">X</button>
+            <Politica />
+          </div>
+        </div>
+      )}
     </footer>
   );
 }

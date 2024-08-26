@@ -5,6 +5,7 @@
   text-align: center;
   padding: 20px;
   margin: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
   img {
     max-width: 100%;
@@ -21,4 +22,18 @@
     font-size: 16px;
     color: #666;
   }
+
+  &:hover {
+    transform: scale(1.1);
+    z-index: 1; /* Para que el card en foco esté encima */
+  }
+
+  &:hover ~ .Product-card {
+    opacity: 0.5;
+  }
+}
+
+/* Resetea la opacidad cuando el cursor ya no está sobre ningún card */
+&:not(:hover) .Product-card {
+  opacity: 1;
 }
