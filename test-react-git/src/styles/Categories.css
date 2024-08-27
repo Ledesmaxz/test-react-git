@@ -1,25 +1,33 @@
-.categories{
-    display: block;
-    align-items: center;
-}
-
 .categories {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    max-height: 50vh;
+    align-items: flex-start;
 }
 
 .categories p {
-    font-family: 'Times New Roman', serif;
-    color: white;
-    flex: 1; 
-    margin: 2px; 
-    width: 47vh;
-    border-radius: 20px;
+    font-family: 'Helvetica', sans-serif;   
+    padding-left: 15px;
+    margin: 2px;
+    width: 45vh;
+    height: 10vh;
     cursor: pointer;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border: 1px solid rgb(236, 235, 235); 
-    background-color: #ac8b5d;
-  }
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(141, 141, 141);
+}
+
+.arrow-icon {
+    padding-right: 5px;
+    width: 30px;  
+    height: auto;
+    margin-left: auto; 
+}
+
+.submenu {
+    padding-left: 20px;
+    font-size: 14px;
+}
