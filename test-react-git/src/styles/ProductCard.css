@@ -25,15 +25,13 @@
 
   &:hover {
     transform: scale(1.1);
-    z-index: 1; /* Para que el card en foco esté encima */
+    z-index: 1; 
   }
 
   &:hover ~ .Product-card {
     opacity: 0.5;
   }
 }
-
-/* Resetea la opacidad cuando el cursor ya no está sobre ningún card */
 &:not(:hover) .Product-card {
   opacity: 1;
 }

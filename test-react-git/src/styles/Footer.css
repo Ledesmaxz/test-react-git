@@ -20,7 +20,7 @@
     filter: grayscale(0%) invert(50%);
     width: 40px;
     height: auto;
-    margin-bottom: 10px; /* Espacio entre la imagen y el número de teléfono */
+    margin-bottom: 10px; 
   }
   
   .footer__phone 
@@ -56,7 +56,7 @@
     width: 30px;
     height: auto;
     margin: 0 10px;
-    filter: grayscale(100%) invert(100%); /* Convierte la imagen a blanco */
+    filter: grayscale(100%) invert(100%); 
     transition: filter 0.1s ease;
   }
   .modal {
@@ -78,9 +78,9 @@
     border-radius: 5px;
     max-width: 700px;
     width: 100%;
-    max-height: 550px; /* Limitar la altura del modal al 80% de la altura de la ventana */
-    overflow-y: auto; /* Habilitar el scroll vertical si el contenido es demasiado largo */
-    position: relative; /* Necesario para posicionar el botón de cierre */
+    max-height: 550px; 
+    overflow-y: auto; 
+    position: relative;
   }
   
   .close-button {
